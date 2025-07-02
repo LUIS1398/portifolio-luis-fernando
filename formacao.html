@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação</title>
+    <!-- inicio do css-->
+    <style>
+         @keyframes fadeInUp {
+        from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        text-align: center;
+    }
+
+    header {
+        background-color: #1e90ff;
+        color: white;
+        padding: 30px 10px;
+    }
+
+    nav {
+        background-color: #e9e9e9;
+        padding: 10px 0;
+    }
+
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #1e90ff;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+
+    .container-forma {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        animation: fadeInUp 1s ease-out;
+    }
+    .container-forma h2{
+        font-size: 28px;
+        color: #222;
+        margin-bottom: 20px;
+        animation: fadeInUp 1s ease-out;
+    }
+    .container-forma ul {
+        list-style: none;
+        padding: 0;
+        font-size: 18px;
+    }
+    .container-forma li {
+         opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.8s ease forwards;
+        margin-bottom: 15px;
+    }
+    
+     .container-forma li:nth-child(1) {
+        animation-delay: 0.5s;
+    }
+
+    .container-forma li:nth-child(2) {
+        animation-delay: 0.8s;
+    }
+
+    .container-forma li:nth-child(3) {
+        animation-delay: 1.1s;
+    }
+
+    .container-forma a {
+        color: #005582;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .container-forma a:hover {
+        color: #005582;
+        text-decoration: underline;
+        transform: scale(1.05);
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 15px 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        font-size: 14px;
+        animation: fadeInUp 1s ease-out;
+        animation-delay: 0.6s;
+        animation-fill-mode: both;
+    }
+    </style>
+</head>
+<body>
+   <nav>
+    <a href="index.html">Página Inicial</a>
+    <a href="projetos.html">Projetos</a>
+    <a href="sobreMim.html">Sobre Mim</a>
+    <a href="contato.html">Contato</a>
+   </nav> 
+
+    <header>
+        <h2>Minhas Formações</h2>
+    </header>
+    
+    <main>  
+
+        <div class="container-forma">
+            <ul>
+                <li>Ensino médio completo</li>
+                <li>TC.Infórmatica Instituto Federal Do Amápa - 2014/2018<span id="IFAP" title="Instituto Federal do Amápa"> IFAP</span></li>
+                
+                <li> Cursando Análise e Desenvolvimento de Sistemas - 2025/2027 <span id="uninter" title="Centro Universitário Internacional">UNINTER</span></li>
+            </ul>
+
+        </div>
+
+    </main>
+
+    
+    <footer>
+        &copy;<span id="ano"></span> 2025 - LUIS FERNANDO SILVA DO VALE
+    </footer>
+    
+    <script>
+    // Inserir o ano atual automaticamente
+   document.getelementByID("ano").textContent = new Dat().gerFullYear();
+ 
+   
+
+  </script>
+
+</body>
+</html>

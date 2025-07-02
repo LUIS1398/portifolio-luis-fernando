@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <style>
+        /*Inicio do css*/
+         @keyframes fadeInUp {
+        from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        text-align: center;
+    }
+
+    header {
+        background-color: #1e90ff;
+        color: white;
+        padding: 30px 10px;
+    }
+
+    nav {
+        background-color: #e9e9e9;
+        padding: 10px 0;
+    }
+
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #1e90ff;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 15px 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        font-size: 14px;
+        animation: fadeInUp 1s ease-out;
+        animation-delay: 0.6s;
+        animation-fill-mode: both;
+    }
+    
+    .botao-link {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 24px;
+        background-color: #1e90ff;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        
+    }
+    
+    .botao-link:hover{
+        background-color: #0f5fc6;;
+    }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Meus Projetos</h1>
+    </header>
+
+    <nav>
+        <a href="index.htm">Página Inicial</a>
+        <a href="sobreMim.html">Sobre Mim</a>
+        <a href="contato.html">Contato</a>
+        <a href="formacao.html">Formação</a>
+    </nav>
+    
+    <main>
+        <h2>Alguns dos meus trabalhos</h2>
+        <li><strong>Projeto 1:</strong> É um projeto simples para cadastro, consulta e exclusão de um livro.</li>
+        <a href="https://github.com/LUIS1398/aulapratica/blob/master/Biblioteca.py" class="botao-link">Biblioteca</a>
+        <br>
+        <br>
+         <li><strong>Projeto 2:</strong> Esse projeto simula um cardápio.</li>
+        <a href="https://github.com/LUIS1398/aulapratica/blob/master/Sorveteria.py" class="botao-link">Sorveteria</a>
+    </main>
+    
+    <footer>
+        &copy; 2025 - LUIS FERNANDO SIVLA DO VALE
+    </footer>
+    
+    
+</body>
+</html>
